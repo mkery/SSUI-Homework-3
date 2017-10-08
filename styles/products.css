@@ -1,0 +1,175 @@
+body {
+	margin: 0;
+	font-family: "Lato", sans-serif;
+}
+
+.navbar {
+	overflow: hidden;
+	background-color: #fff;
+	position: fixed;
+	top: 0;
+	width: 1366px;
+	height: 100px;
+}
+
+#logo {
+	height: 50px;
+}
+
+#cart {
+	width: 60px;
+	margin-right: 50px;
+}
+
+.navRight{
+	display: block;
+	float: right;
+	/*padding: 31px;*/
+	font-size: 30px;
+	text-align: center;
+}
+
+.navHover{
+	padding: 31px;
+}
+
+.navCart{
+	margin-top: 5px;
+	padding: 25px;
+}
+
+.navbar a{
+	text-decoration: none;
+	color: #3D3E3E;
+}
+
+.navHover:hover{
+	background-color: #95989A;
+}
+
+.navLeft img{
+	margin-left: 50px;
+	margin-top: 31px;
+}
+
+.main {
+	margin-top: 150px;
+}
+
+.maincontent {
+	margin-top: 150px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.bottombar {
+	width: 100%;
+	text-align: center;
+}
+
+.bottombar nav a{
+	text-decoration: none;
+	color: #95989A;
+	font-size: 25px;
+	margin: 100px;
+}
+
+.productsInd {
+	display: block;
+	width: 300px;
+	height: 300px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	border-color: #95989A;
+	border-style: solid;
+	border-width: 1px;
+	float: left;
+	/*text-align: center;*/
+}
+
+.slideDots {
+	margin-top: 10px;
+}
+
+.slideIndivDot {
+	cursor:pointer;
+	height: 25px;
+	width: 25px;
+/*	margin: 0 2px;
+	background-color: #bbb;*/
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.strawberryDot {
+	margin-right: 4px;
+	background-color: #E34C6F;
+}
+
+.blackberryDot{
+	margin-right: 4px;
+	background-color: #6B4CB1;
+}
+
+.crazyberryDot {
+	margin-right: 4px;
+	background-color: #AB40CB;
+}
+
+.camouflageDot {
+	margin-right: 4px;
+	background-color: #0E740E;
+}
+
+.nightDot {
+	margin-right: 4px;
+	background-color: #DBDB19;
+}
+
+.fireDot {
+	background-color: #E68A1E;
+}
+
+.productColors {
+	display: none;
+}
+
+.productColorsDefault {
+	display: block;
+}
+
+.productColors img{
+	margin-top: 10px;
+	margin-left: 50px;
+	width: 200px;
+	height: 200px;
+	align-items: center;
+}
+
+.colorTexts {
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+
+.productName {
+	font-size: 25px;
+	/*float: left;*/
+}
+
+.productPrice {
+	font-size: 30px;
+	color: #CE113D;
+	float: right;
+}
+
+.filter {
+	width: 300px;
+	/*height: 1000px;*/
+	float: left;
+}
+
+.productsList {
+	width: 930px;
+	float: right;
+}

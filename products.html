@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Muddy Paws Products</title>
+
+  <!--The following line loads in your CSS style sheet-->
+  <link rel="stylesheet" href="styles/products.css">
+
+  <!--The following line loads in 2 fonts from Google Fonts: Bad Script and Lato-->
+  <link href="https://fonts.googleapis.com/css?family=Bad+Script|Lato" rel="stylesheet">
+
+  <!--The following line loads in your JS script-->
+  <script src="scripts/products.js"></script>
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="index.html" class="navLeft"><img src="resources/logos/muddy paws.png" id = "logo" alt = "logo"></a>
+    <a href="cart.html" class="navRight navCart"><img src = "resources/logos/shopping cart.png" id = "cart" alt = "shopping cart" /></a>
+    <a href="about.html" class="navRight navHover">About Us</a>
+    <a href="products.html" class="navRight navHover">Products</a>
+  </div>
+  <div class="main">
+  	<div class="maincontent">
+	  	<div class="filter"></div>
+	  	<div class="productsList">
+	  		<div class="productsInd" id="dogHarness">
+	  			<!-- images used: -->
+	  			<!-- https://images-na.ssl-images-amazon.com/images/I/71Luv2nWm7L._SL1000_.jpg -->
+	  			<!-- http://cdn0.wideopenpets.com/wp-content/uploads/2016/11/61M3P2a8wfL._SL1000_.jpg -->
+	  			<!-- http://cdn.shopify.com/s/files/1/1908/1979/products/Teal_No-Pull_Dog_Harness_Bottom_View_1024x1024.jpg?v=1502110485 -->
+	  			<!-- https://cdn.shopify.com/s/files/1/1107/5746/products/harness1r_1024x1024.jpg?v=1487043178 -->
+	  			<!-- https://www.luckypet.com.au/assets/full/38449.jpg -->
+	  			<!-- https://images.incuboom.com/global/images/products/large/gooby-comfort-x-step-in-dog-harness-red-1753.jpg -->
+	  			<div class="productColors productColorsDefault dogHarnessColors">
+	  				<a href="dogharnessStraw.html"><img src="resources/images/dogHarness/dog1.jpg"></a>
+	  			</div>
+	  			<div class="productColors dogHarnessColors">
+	  				<a href="dogharnessBlack.html"><img src="resources/images/dogHarness/dog2.jpg"></a>
+	  			</div>
+	  			<div class="productColors dogHarnessColors">
+	  				<a href="dogharnessCrazy.html"><img src="resources/images/dogHarness/dog3.jpg"></a>
+	  			</div>
+	  			<div class="productColors dogHarnessColors">
+	  				<a href="dogharnessCam.html"><img src="resources/images/dogHarness/dog4.jpg"></a>
+	  			</div>
+	  			<div class="productColors dogHarnessColors">
+	  				<a href="dogharnessNight.html"><img src="resources/images/dogHarness/dog5.jpg"></a>
+	  			</div>
+	  			<div class="productColors dogHarnessColors">
+	  				<a href="dogharnessFire.html"><img src="resources/images/dogHarness/dog6.jpg"></a>
+	  			</div>
+	  			<div class="colorTexts">
+		  			<div class="productPrice">$20</div>
+		  			<div class="productName">Dog Harness</div>
+		  			<div class="slideDots">
+		  				<span class="slideIndivDot strawberryDot dogHarnessDots" onclick="showDogHarness(0)"></span>
+		  				<span class="slideIndivDot blackberryDot dogHarnessDots" onclick="showDogHarness(1)"></span>
+		  				<span class="slideIndivDot crazyberryDot dogHarnessDots" onclick="showDogHarness(2)"></span>
+		  				<span class="slideIndivDot camouflageDot dogHarnessDots" onclick="showDogHarness(3)"></span>
+		  				<span class="slideIndivDot nightDot dogHarnessDots" onclick="showDogHarness(4)"></span>
+		  				<span class="slideIndivDot fireDot dogHarnessDots" onclick="showDogHarness(5)"></span>
+		  			</div>
+		  		</div>
+	  		</div>
+	  		<div class="productsInd" id="catHarness">
+	  			<div class="productName">Cat Harness</div>
+	  			<div class="productPrice">$20</div>
+	  		</div>
+	  		<div class="productsInd" id="harnessAttach">
+	  			<div class="productName">Harness Storage Attachment</div>
+	  			<div class="productPrice">$15</div>
+	  		</div>
+	  		<div class="productsInd" id="petGPS">
+	  			<div class="productName">GPS Tracker Collar</div>
+	  			<div class="productPrice">$80</div>
+	  		</div>
+	  	</div>
+  	</div>
+  </div>
+</body>
