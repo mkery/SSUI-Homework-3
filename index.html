@@ -2,22 +2,99 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>My Awesome Store</title>
+  <title>Muddy Paws</title>
 
   <!--The following line loads in your CSS style sheet-->
   <link rel="stylesheet" href="styles/index.css">
 
   <!--The following line loads in 2 fonts from Google Fonts: Bad Script and Lato-->
-  <link href="https://fonts.googleapis.com/css?family=Bad+Script|Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bad+Script|Lato:300,400,700" rel="stylesheet">
 
   <!--The following line loads in your JS script-->
-  <script src="js/todo.js"></script>
+  <script src="scripts/index.js"></script>
 </head>
 
-<body>
+<!-- <body>
   <h1>Welcome to my store!</h1>
   <p>This store sells all kinds of items. We have old items and new items. Some items are more expensive than others.</p>
   <img src="./resources/images/whatsInStore.png" class="starterImage" alt="a picture of a box that says what's in store for your store"></img>
   <p>Feel free to delete this content! This is only to put down some html tags and css to get you started.</p>
+</body> -->
+<body>
+  <div class="navbar">
+    <a href="index.html" class="navLeft"><img src="resources/logos/muddy paws.png" id = "logo" alt = "logo"></a>
+    <a href="cart.html" class="navRight navCart"><img src = "resources/logos/shopping cart.png" id = "cart" alt = "shopping cart" /></a>
+    <a href="about.html" class="navRight navHover">About Us</a>
+    <a href="products.html" class="navRight navHover">Products</a>
+  </div>
+  <div class="main">
+    <div class="highlight">
+      <table id="highlightTable">
+      <tr class="highlightBar highlightBarDefault">
+        <th>
+          <img src="resources/images/indexDog.jpg">
+        </th>
+        <td>
+          <div class="headTitle">The best harness you’ve ever seen</div>
+          <div class="headSubTitle">With multiple sizes and colors, truly customized for your pet.</div>
+          <div class="buyNowButton"><a href="dogharness-0.html">Buy Now</a></div>
+        </td>
+      </tr>
+      <tr class="highlightBar">
+        <th>
+          <img src="resources/images/catHarness/cat6.jpg">
+        </th>
+        <td>
+          <div class="headTitle">The best harness you’ve ever used</div>
+          <div class="headSubTitle">With multiple sizes and colors, truly customized for your pet.</div>
+          <div class="buyNowButton"><a href="catharness-1.html">Buy Now</a></div>
+        </td>
+      </tr>
+      <tr class="highlightBar">
+        <th>
+          <img src="resources/images/gps.jpg">
+        </th>
+        <td>
+          <div class="headTitle">The best pet GPS you’ve ever seen</div>
+          <div class="headSubTitle">With multiple sizes and colors, truly customized for your pet.</div>
+          <div class="buyNowButton"><a href="gps-1.html">Buy Now</a></div>
+        </td>
+      </tr>
+      <tr><th colspan="2" class="highlightDotsList">
+        <span class="highlightDot highlightDotDefault" onclick="showHighlight(0)"></span>
+        <span class="highlightDot" onclick="showHighlight(1)"></span>
+        <span class="highlightDot" onclick="showHighlight(2)"></span>
+      </th></tr>
+      </table>
+    </div>
+    <div class="details">
+      <table class="detailTable">
+      <tr>
+        <th>
+          <img src="resources/images/catHarness/cat5.jpg">
+        </th>
+        <td>
+          <p>The Muddy Paws' Soft Dog Harness is an easy-to-use everyday collar that provides ultimate comfort. Made for convenience and function, this lightweight harness features a comfortable neck opening and an adjustable quick-release chest belt with a D-ring for leash attachment. With super-soft air-mesh padding and a practical design, the Soft Dog Harness lets your four-legged friend stroll along with style and comfort on his daily walks.</p>
+        </td>
+      </tr>
+      </table>
+      <table class="detailTable">
+      <tr>
+        <td id="leftBlock">
+          <p>Soft inner padding for superior comfort
+          Features a comfortable neck opening and an adjustable quick-release belt with a D-ring for leash attachment
+          Made from cotton and polyester
+          High-quality and lightweight
+          Authentic Puppia rubber label</p>
+        </td>
+        <td>
+          <img src="resources/images/catHarness/cat1.jpg">
+        </td>
+      </tr>
+
+      </table>
+    </div>
+  </div>
 </body>
+
 </html>

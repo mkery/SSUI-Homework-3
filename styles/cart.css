@@ -1,0 +1,173 @@
+body {
+	margin: 0;
+	font-family: "Lato", sans-serif;
+}
+
+.navbar {
+	overflow: hidden;
+	background-color: #fff;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100px;
+}
+
+#logo {
+	height: 50px;
+}
+
+#cart {
+	width: 60px;
+	margin-right: 50px;
+}
+
+.navRight{
+	display: block;
+	float: right;
+	/*padding: 31px;*/
+	font-size: 30px;
+	text-align: center;
+}
+
+.navHover{
+	padding: 31px;
+}
+
+.navCart{
+	margin-top: 5px;
+	padding: 25px;
+}
+
+.navbar a{
+	text-decoration: none;
+	color: #3D3E3E;
+}
+
+.navHover:hover{
+	background-color: #95989A;
+}
+
+.navLeft img{
+	margin-left: 50px;
+	margin-top: 31px;
+}
+
+.main {
+	margin-top: 100px;
+}
+
+footer {
+	text-align: center;
+}
+
+.bottombar nav a{
+	text-decoration: none;
+	color: #95989A;
+	font-size: 25px;
+	margin: 100px;
+}
+
+table{
+	margin-left: 80px;
+}
+
+table th{
+	width: 300px;
+}
+
+table td{
+	text-align: center;
+	width: 300px;
+}
+
+#subtotal {
+	text-align: right;
+}
+
+#subtotalText{
+	font-size: 30px;
+}
+
+#subtotalNum {
+	color: #CE113D;
+	font-size: 40px;
+}
+
+.cartItemTitle {
+	font-size: 40px;
+}
+
+.cartItemSize {
+	color: #95989A;
+	font-size: 25px;
+}
+
+.cartItemColor {
+	color: #95989A;
+	font-size: 25px;
+}
+
+.cartItemCost {
+	color: #CE113D;
+	font-size: 40px;
+}
+
+.cartItem img{
+	height: 200px;
+	width: 200px;
+}
+
+.cartItemQuant {
+	margin-left: 80px;
+	margin-bottom: 10px;
+	text-align: center;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #95989A;
+	border-radius: 5px;
+	height: 40px;
+	width: 130px;
+}
+
+.quanButt {
+	color: #95989A;
+	cursor:pointer;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	font-size: 30px;
+/*	border-style: solid;
+	border-width: 1px;*/
+	/*border-color: #95989A;*/
+}
+
+.quantityNum{
+	color: #95989A;
+	font-size: 25px;
+/*	height: 40px;*/
+}
+
+.decButton {
+	float:left;
+}
+
+.incButton {
+	float: right;
+}
+
+.deleteItem {
+	color: #1150DE;
+	text-decoration: underline;
+}
+
+.checkoutButton {
+	margin-top: 30px;
+	margin-right: 70px;
+	margin-left: 150px;
+	color: #95989A;
+	font-size: 40px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #95989A;
+	border-radius: 5px;
+}

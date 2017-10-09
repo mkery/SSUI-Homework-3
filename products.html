@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Muddy Paws Products</title>
+
+  <!--The following line loads in your CSS style sheet-->
+  <link rel="stylesheet" href="styles/products.css">
+
+  <!--The following line loads in 2 fonts from Google Fonts: Bad Script and Lato-->
+  <link href="https://fonts.googleapis.com/css?family=Bad+Script|Lato:300,400,700" rel="stylesheet">
+
+  <!--The following line loads in your JS script-->
+  <script src="scripts/products.js"></script>
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="index.html" class="navLeft"><img src="resources/logos/muddy paws.png" id = "logo" alt = "logo"></a>
+    <a href="cart.html" class="navRight navCart"><img src = "resources/logos/shopping cart.png" id = "cart" alt = "shopping cart" /></a>
+    <a href="about.html" class="navRight navHover">About Us</a>
+    <a href="products.html" class="navRight navHover">Products</a>
+  </div>
+  <div class="main">
+  	<div class="maincontent">
+	  	<div class="filter">
+	  		<div class="filterText">Animals</div>
+	  		<hr/>
+	  		<div class="animalList filterList">
+	  			<span class="filterTextContent" onclick="addTag('Dog')">Dog</span>
+	  			<span class="filterTextContent" onclick="addTag('Cat')">Cat</span>
+	  		</div>
+	  		<div class="filterText">Functions</div>
+	  		<hr/>
+	  		<div class="functionList filterList">
+	  			<span class="filterTextContent" onclick="addTag('Harness')">Harness</span>
+	  			<span class="filterTextContent" onclick="addTag('Accessories')">Accessories</span>
+	  		</div>
+	  		<div class="filterText">Sizes</div>
+	  		<hr/>
+	  		<div class="productSizeList filterList">
+	  			<span class="sizeDot" onmousedown="checkSizeDown(0)" onmouseup="checkSizeUp(0)"></span>
+				<span class="sizeText">XS</span>
+				<span class="sizeDot" onmousedown="checkSizeDown(1)" onmouseup="checkSizeUp(1)"></span>
+				<span class="sizeText">S</span>
+				<span class="sizeDot" onmousedown="checkSizeDown(2)" onmouseup="checkSizeUp(2)"></span>
+				<span class="sizeText">M</span>
+				<span class="sizeDot" onmousedown="checkSizeDown(3)" onmouseup="checkSizeUp(3)"></span>
+				<span class="sizeText">L</span>
+	  		</div>
+	  		<div class="filterText">Colors</div>
+	  		<hr/>
+	  		<div class="productColorList filterList">
+	  			<span class="colorDot strawberryDots" onclick="checkColor(0)"></span>
+				<span class="colorDot blackberryDots" onclick="checkColor(1)"></span>
+				<span class="colorDot crazyberryDots" onclick="checkColor(2)"></span>
+				<span class="colorDot camouflageDots" onclick="checkColor(3)"></span>
+				<span class="colorDot nightDots" onclick="checkColor(4)"></span>
+				<span class="colorDot fireDots" onclick="checkColor(5)"></span>
+	  		</div>
+	  		<div class="filterTags" id="filterTagContainer">
+	  		</div>
+	  	</div>
+	  	<div class="productsList">
+	  		<div class="productsInd" id="dogHarness">
+	  			<!-- images used: -->
+	  			<!-- https://images-na.ssl-images-amazon.com/images/I/71Luv2nWm7L._SL1000_.jpg -->
+	  			<!-- http://cdn0.wideopenpets.com/wp-content/uploads/2016/11/61M3P2a8wfL._SL1000_.jpg -->
+	  			<!-- http://cdn.shopify.com/s/files/1/1908/1979/products/Teal_No-Pull_Dog_Harness_Bottom_View_1024x1024.jpg?v=1502110485 -->
+	  			<!-- https://cdn.shopify.com/s/files/1/1107/5746/products/harness1r_1024x1024.jpg?v=1487043178 -->
+	  			<!-- https://www.luckypet.com.au/assets/full/38449.jpg -->
+	  			<!-- https://images.incuboom.com/global/images/products/large/gooby-comfort-x-step-in-dog-harness-red-1753.jpg -->
+	  			<div class="productColors productColorsDefault dogHarnessColors">
+	  				<a href="dogharness-0.html"><img src="resources/images/dogHarness/dog1.jpg"></a>
+	  			</div>
+	  			<div class="productColors dogHarnessColors">
+	  				<a href="dogharness-2.html"><img src="resources/images/dogHarness/dog2.jpg"></a>
+	  			</div>
+	  			<div class="productColors dogHarnessColors">
+	  				<a href="dogharness-3.html"><img src="resources/images/dogHarness/dog3.jpg"></a>
+	  			</div>
+	  			<div class="productColors dogHarnessColors">
+	  				<a href="dogharness-4.html"><img src="resources/images/dogHarness/dog4.jpg"></a>
+	  			</div>
+	  			<div class="productColors dogHarnessColors">
+	  				<a href="dogharness-5.html"><img src="resources/images/dogHarness/dog5.jpg"></a>
+	  			</div>
+	  			<div class="productColors dogHarnessColors">
+	  				<a href="dogharness-6.html"><img src="resources/images/dogHarness/dog6.jpg"></a>
+	  			</div>
+	  			<div class="colorTexts">
+		  			<div class="productPrice">$20</div>
+		  			<div class="productName">Dog Harness</div>
+		  			<div class="slideDots">
+		  				<span class="slideIndivDot strawberryDot dogHarnessDots" onclick="showColors(0, 'dogHarnessColors')"></span>
+		  				<span class="slideIndivDot blackberryDot dogHarnessDots" onclick="showColors(1, 'dogHarnessColors')"></span>
+		  				<span class="slideIndivDot crazyberryDot dogHarnessDots" onclick="showColors(2, 'dogHarnessColors')"></span>
+		  				<span class="slideIndivDot camouflageDot dogHarnessDots" onclick="showColors(3, 'dogHarnessColors')"></span>
+		  				<span class="slideIndivDot nightDot dogHarnessDots" onclick="showColors(4, 'dogHarnessColors')"></span>
+		  				<span class="slideIndivDot fireDot dogHarnessDots" onclick="showColors(5, 'dogHarnessColors')"></span>
+		  			</div>
+		  		</div>
+	  		</div>
+	  		<div class="productsInd" id="catHarness">
+	  		<!-- https://s7d1.scene7.com/is/image/PETCO/1081462-center-1 -->
+	  		<!-- http://www.drsfostersmith.com/images/Categoryimages/normal/p-30276-FS94539KZ_009.jpg -->
+	  			<div class="productColors productColorsDefault catHarnessColors">
+	  				<a href="catharness-1.html"><img src="resources/images/catHarness/cat1.jpg"></a>
+	  			</div>
+	  			<div class="productColors catHarnessColors">
+	  				<a href="catharness-2.html"><img src="resources/images/catHarness/cat2.jpg"></a>
+	  			</div>
+	  			<div class="productColors catHarnessColors">
+	  				<a href="catharness-3.html"><img src="resources/images/catHarness/cat3.jpg"></a>
+	  			</div>
+	  			<div class="productColors catHarnessColors">
+	  				<a href="catharness-4.html"><img src="resources/images/catHarness/cat4.jpg"></a>
+	  			</div>
+	  			<div class="productColors catHarnessColors">
+	  				<a href="catharness-5.html"><img src="resources/images/catHarness/cat5.jpg"></a>
+	  			</div>
+	  			<div class="productColors catHarnessColors">
+	  				<a href="catharness-6.html"><img src="resources/images/catHarness/cat6.jpg"></a>
+	  			</div>
+	  			<div class="colorTexts">
+		  			<div class="productPrice">$20</div>
+		  			<div class="productName">Cat Harness</div>
+		  			<div class="slideDots">
+		  				<span class="slideIndivDot strawberryDot catHarnessDots" onclick="showColors(0, 'catHarnessColors')"></span>
+		  				<span class="slideIndivDot blackberryDot catHarnessDots" onclick="showColors(1, 'catHarnessColors')"></span>
+		  				<span class="slideIndivDot crazyberryDot catHarnessDots" onclick="showColors(2, 'catHarnessColors')"></span>
+		  				<span class="slideIndivDot camouflageDot catHarnessDots" onclick="showColors(3, 'catHarnessColors')"></span>
+		  				<span class="slideIndivDot nightDot catHarnessDots" onclick="showColors(4, 'catHarnessColors')"></span>
+		  				<span class="slideIndivDot fireDot catHarnessDots" onclick="showColors(5, 'catHarnessColors')"></span>
+		  			</div>
+		  		</div>
+	  		<!-- 	<div class="productName">Cat Harness</div>
+	  			<div class="productPrice">$20</div> -->
+	  		</div>
+	  		<div class="productsInd" id="harnessAttach">
+	  		<!-- https://images.incuboom.com/global/images/products/large/web-master-pro-dog-harnessruffwear-red-currant-4182.jpg -->
+	  			<div class="productColors productColorsDefault harnessAttachColors">
+	  				<a href="bag-1.html"><img src="resources/images/bag.jpg"></a>
+	  			</div>
+	  			<div class="productColors harnessAttachColors">
+	  				<a href="bag-2.html"><img src="resources/images/dogHarness/dog2.jpg"></a>
+	  			</div>
+	  			<div class="productColors harnessAttachColors">
+	  				<a href="bag-3.html"><img src="resources/images/dogHarness/dog3.jpg"></a>
+	  			</div>
+	  			<div class="productColors harnessAttachColors">
+	  				<a href="bag-4.html"><img src="resources/images/dogHarness/dog4.jpg"></a>
+	  			</div>
+	  			<div class="productColors harnessAttachColors">
+	  				<a href="bag-5.html"><img src="resources/images/dogHarness/dog5.jpg"></a>
+	  			</div>
+	  			<div class="productColors harnessAttachColors">
+	  				<a href="bag-6.html"><img src="resources/images/dogHarness/dog6.jpg"></a>
+	  			</div>
+	  			<div class="colorTexts">
+		  			<div class="productPrice">$15</div>
+		  			<div class="productName">Harness Storage</div>
+		  			<div class="slideDots">
+		  				<span class="slideIndivDot strawberryDot harnessAttachDots" onclick="showColors(0, 'harnessAttachColors')"></span>
+		  				<span class="slideIndivDot blackberryDot harnessAttachDots" onclick="showColors(1, 'harnessAttachColors')"></span>
+		  				<span class="slideIndivDot crazyberryDot harnessAttachDots" onclick="showColors(2, 'harnessAttachColors')"></span>
+		  				<span class="slideIndivDot camouflageDot harnessAttachDots" onclick="showColors(3, 'harnessAttachColors')"></span>
+		  				<span class="slideIndivDot nightDot harnessAttachDots" onclick="showColors(4, 'harnessAttachColors')"></span>
+		  				<span class="slideIndivDot fireDot harnessAttachDots" onclick="showColors(5, 'harnessAttachColors')"></span>
+		  			</div>
+		  		</div>
+	  			<!-- <div class="productName">Storage Attachment</div>
+	  			<div class="productPrice">$15</div> -->
+	  		</div>
+	  		<div class="productsInd" id="petGPS">
+	  		<!-- http://tracking.watch/wp-content/uploads/2015/01/Tagg-the-pet-tracker1.jpg -->
+	  			<div class="productColors productColorsDefault petGPSColors">
+	  				<a href="gps-1.html"><img src="resources/images/gps.jpg"></a>
+	  			</div>
+	  			<div class="productColors petGPSColors">
+	  				<a href="gps-2.html"><img src="resources/images/dogHarness/dog2.jpg"></a>
+	  			</div>
+	  			<div class="productColors petGPSColors">
+	  				<a href="gps-3.html"><img src="resources/images/dogHarness/dog3.jpg"></a>
+	  			</div>
+	  			<div class="productColors petGPSColors">
+	  				<a href="gps-4.html"><img src="resources/images/dogHarness/dog4.jpg"></a>
+	  			</div>
+	  			<div class="productColors petGPSColors">
+	  				<a href="gps-5.html"><img src="resources/images/dogHarness/dog5.jpg"></a>
+	  			</div>
+	  			<div class="productColors petGPSColors">
+	  				<a href="gps-6.html"><img src="resources/images/dogHarness/dog6.jpg"></a>
+	  			</div>
+	  			<div class="colorTexts">
+		  			<div class="productPrice">$80</div>
+		  			<div class="productName">GPS Tracker Collar</div>
+		  			<div class="slideDots">
+		  				<span class="slideIndivDot strawberryDot petGPSDots" onclick="showColors(0, 'petGPSColors')"></span>
+		  				<span class="slideIndivDot blackberryDot petGPSDots" onclick="showColors(1, 'petGPSColors')"></span>
+		  				<span class="slideIndivDot crazyberryDot petGPSDots" onclick="showColors(2, 'petGPSColors')"></span>
+		  				<span class="slideIndivDot camouflageDot petGPSDots" onclick="showColors(3, 'petGPSColors')"></span>
+		  				<span class="slideIndivDot nightDot petGPSDots" onclick="showColors(4, 'petGPSColors')"></span>
+		  				<span class="slideIndivDot fireDot petGPSDots" onclick="showColors(5, 'petGPSColors')"></span>
+		  			</div>
+		  		</div>
+	  			<!-- <div class="productName">GPS Tracker Collar</div>
+	  			<div class="productPrice">$80</div> -->
+	  		</div>
+	  	</div>
+  	</div>
+  </div>
+</body>
