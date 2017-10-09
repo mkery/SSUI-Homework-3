@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Muddy Paws Products</title>
+
+  <!--The following line loads in your CSS style sheet-->
+  <link rel="stylesheet" href="styles/cart.css">
+
+  <!--The following line loads in 2 fonts from Google Fonts: Bad Script and Lato-->
+  <link href="https://fonts.googleapis.com/css?family=Bad+Script|Lato" rel="stylesheet">
+
+  <!--The following line loads in your JS script-->
+  <script src="scripts/cart.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html" class="navLeft"><img src="resources/logos/muddy paws.png" id = "logo" alt = "logo"></a>
+        <a href="cart.html" class="navRight navCart"><img src = "resources/logos/shopping cart.png" id = "cart" alt = "shopping cart" /></a>
+        <a href="about.html" class="navRight navHover">About Us</a>
+        <a href="products.html" class="navRight navHover">Products</a>
+  </div>
+  <div class="main">
+  	<table class="cartItems" id="carItemsTable">
+  		<tr class="cartItem" id="cartItemDog">
+    		<th><a href="dogharness-0.html"><img src="resources/images/dogHarness/dog1.jpg"></a></th>
+    		<td>
+    			<div class="cartItemTitle">Dog Harness</div>
+  				<div class="cartItemSize">Small</div>
+  				<div class="cartItemColor">Strawberry</div>
+    		</td>
+    		<td><div class="cartItemCost" id="cost0">$20</div></td>
+    		<td>
+    			<div class="cartItemQuant">
+    				<span class="quanButt decButton" onclick="decQuantity(0)">-</span>
+    				<span class="quanNum quantityNum" id="quantityNum0">1</span>
+    				<span class="quanButt incButton" onclick="incQuantity(0)">+</span>
+    			</div>
+  				<div class="deleteItem" onclick="deleteCart(this)">delete</div>
+    		</td>
+ 		</tr>
+ 		<tr class="cartItem" id="cartItemCat">
+    		<th><a href="catharness-0.html"><img src="resources/images/catHarness/cat3.jpg"></a></th>
+    		<td>
+    			<div class="cartItemTitle">Cat Harness</div>
+  				<div class="cartItemSize">Large</div>
+  				<div class="cartItemColor">Crazyberry</div>
+    		</td>
+    		<td><div class="cartItemCost" id="cost1">$20</div></td>
+    		<td>
+    			<div class="cartItemQuant">
+    				<span class="quanButt decButton" onclick="decQuantity(1)">-</span>
+    				<span class="quanNum quantityNum" id="quantityNum1">1</span>
+    				<span class="quanButt incButton" onclick="incQuantity(1)">+</span>
+    			</div>
+  				<div class="deleteItem" onclick="deleteCart(this)">delete</div>
+    		</td>
+ 		</tr>
+ 		<tr class="cartItem" id="cartItemGPS">
+    		<th><a href="catharness-0.html"><img src="resources/images/gps.jpg"></a></th>
+    		<td>
+    			<div class="cartItemTitle">GPS Tracker Collar</div>
+  				<div class="cartItemSize">Medium</div>
+  				<div class="cartItemColor">Strawberry</div>
+    		</td>
+    		<td><div class="cartItemCost" id="cost2">$80</div></td>
+    		<td>
+    			<div class="cartItemQuant">
+    				<span class="quanButt decButton" onclick="decQuantity(2)">-</span>
+    				<span class="quanNum quantityNum" id="quantityNum2">1</span>
+    				<span class="quanButt incButton" onclick="incQuantity(2)">+</span>
+    			</div>
+  				<div class="deleteItem" onclick="deleteCart(this)">delete</div>
+    		</td>
+ 		</tr>
+ 		<tr id="subtotal">
+ 			<th colspan="3" id="subtotalText">Subtotal:</th>
+ 			<td id="subtotalNum">$120</th>
+ 		</tr>
+ 		<tr id="checkout">
+ 			<th colspan="2"></th>
+ 			<td colspan="2">
+ 				<div class="checkoutButton">Checkout</div>
+ 			</td>
+ 		</tr>
+  	</table>
+<!--   	<div class="cartItem">
+  		<a href="dogharness-0.html"><img src="resources/images/dogHarness/dog1.jpg"></a>
+  		<div class="cartItemTitle">Dog Harness</div>
+  		<div class="cartItemSize">Small</div>
+  		<div class="cartItemColor">Strawberry</div>
+  		<div class="cartItemCost">$20</div>
+  		<div class="cartItemQuant"></div>
+  		<div class="deleteItem">delete</div>
+  	</div> -->
+  </div>
+</body>

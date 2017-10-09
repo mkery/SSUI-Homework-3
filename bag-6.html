@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Muddy Paws Products</title>
+
+  <!--The following line loads in your CSS style sheet-->
+  <link rel="stylesheet" href="styles/singleproduct.css">
+
+  <!--The following line loads in 2 fonts from Google Fonts: Bad Script and Lato-->
+  <link href="https://fonts.googleapis.com/css?family=Bad+Script|Lato" rel="stylesheet">
+
+  <!--The following line loads in your JS script-->
+  <script src="scripts/singleproduct.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+    	<a href="index.html" class="navLeft"><img src="resources/logos/muddy paws.png" id = "logo" alt = "logo"></a>
+    	<a href="cart.html" class="navRight navCart"><img src = "resources/logos/shopping cart.png" id = "cart" alt = "shopping cart" /></a>
+    	<a href="about.html" class="navRight navHover">About Us</a>
+    	<a href="products.html" class="navRight navHover">Products</a>
+    	<div id="cartNumber"></div>
+    </div>
+
+    <div class="main">
+    	<div class="mainproduct">
+        <table><tr>
+        <!-- https://s7d1.scene7.com/is/image/PETCO/2360915-center-1 -->
+        <!-- https://www.glamourmutt.com/assets/images/simplicity-ultrasuede-step-in-dog-harness--wine-n-roses-1.jpg -->
+            <th>
+            <img class="mainproductImg mainproductImgDefault" src="resources/images/dogHarness/dog6.jpg">
+            <img class="mainproductImg" src="resources/images/dogHarness/frontPic.jpg">
+            <img class="mainproductImg" src="resources/images/dogHarness/side.jpg">
+            </th>
+            <td>
+            <div class="mainproductContent">
+                <div class="productName">Harness Storage (Fire Orange)</div>
+                <div class="productPrice">$15</div>
+                <div class="productSizeList">
+                    <span class="sizeDot" onclick="checkSize(0)"></span>
+                    <span class="sizeText">XS</span>
+                    <span class="sizeDot" onclick="checkSize(1)"></span>
+                    <span class="sizeText">S</span>
+                    <span class="sizeDot" onclick="checkSize(2)"></span>
+                    <span class="sizeText">M</span>
+                    <span class="sizeDot" onclick="checkSize(3)"></span>
+                    <span class="sizeText">L</span>
+                </div>
+                <div class="productColors">
+                    <a href="bag-1.html"><span class="colorDot strawberryDot"></span></a>
+                    <span class="colorText">Strawberry</span>
+                    <a href="bag-2.html"><span class="colorDot blackberryDot"></span></a>
+                    <span class="colorText">Blackberry</span>
+                    <a href="bag-3.html"><span class="colorDot crazyberryDot"></span></a>
+                    <span class="colorText">Crazyberry</span>
+                    <br/>
+                    <a href="bag-4.html"><span class="colorDot camouflageDot"></span></a>
+                    <span class="colorText">Camouflage</span>
+                    <a href="bag-5.html"><span class="colorDot nightDot"></span></a>
+                    <span class="colorText">Night Moon</span>
+                    <a href="bag-6.html"><span class="colorDot fireDot"></span></a>
+                    <span class="colorText">Fire Orange</span>
+                </div>
+                <div class="quantityButton">
+                    <span class="quanButt" id="decButton" onclick="decQuantity()">-</span>
+                    <span class="quanNum" id="quantityNum">1</span>
+                    <span class="quanButt" id="incButton" onclick="incQuantity()">+</span>
+                </div>
+                <div class="addToCart" onclick="addToCart()">Add To Cart</div>
+            </div>
+            </td>
+        </tr></table>
+        </div>
+        <div class="mainproductDotList">
+            <span class="mainproductDot" onclick="checkImgDot(0)"><img src="resources/images/dogHarness/dog6.jpg"></span>
+            <span class="mainproductDot" onclick="checkImgDot(1)"><img src="resources/images/dogHarness/frontPic.jpg"></span>
+            <span class="mainproductDot" onclick="checkImgDot(2)"><img src="resources/images/dogHarness/side.jpg"></span>
+        </div>
+	</div>
+
+</body>

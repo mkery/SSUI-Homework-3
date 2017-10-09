@@ -8,7 +8,7 @@ body {
 	background-color: #fff;
 	position: fixed;
 	top: 0;
-	width: 1366px;
+	width: 100%;
 	height: 100px;
 }
 
@@ -95,10 +95,77 @@ body {
 	cursor:pointer;
 	height: 25px;
 	width: 25px;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.filterColor {
+	color : #95989A;
+	font-size: 30px;
+	margin-left: 10px;
+}
+
+.sizeText {
+	color : #95989A;
+	display: inline-block;
+	font-size: 20px;
+	font-weight: lighter;
+	margin-left: 2px;
+	margin-right: 10px;
+}
+
+.sizeDot {
+	cursor:pointer;
+	height: 25px;
+	width: 25px;
+	background-color: #fff;
+	border-radius: 50%;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #95989A;
+	display: inline-block;
+}
+
+.colorDot {
+	cursor:pointer;
+	height: 25px;
+	width: 25px;
 /*	margin: 0 2px;
 	background-color: #bbb;*/
 	border-radius: 50%;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #95989A;
 	display: inline-block;
+}
+
+.strawberryDots {
+	margin-right: 4px;
+	background-color: #E34C6F;
+}
+
+.blackberryDots{
+	margin-right: 4px;
+	background-color: #6B4CB1;
+}
+
+.crazyberryDots {
+	margin-right: 4px;
+	background-color: #AB40CB;
+}
+
+.camouflageDots {
+	margin-right: 4px;
+	background-color: #0E740E;
+}
+
+.nightDots {
+	margin-right: 4px;
+	background-color: #DBDB19;
+}
+
+.fireDots {
+	background-color: #E68A1E;
 }
 
 .strawberryDot {
@@ -165,11 +232,59 @@ body {
 
 .filter {
 	width: 300px;
+	/*height: 500px;*/
+	border-style: solid;
+	border-color: #95989A;
+	border-width: 1px;
 	/*height: 1000px;*/
 	float: left;
+	padding: 10px;
+}
+
+.filterText {
+	font-weight: lighter;
+	font-size: 30px;
+	color: #1F1F1F;
+}
+
+.filterTextContent {
+	font-size: 25px;
+	font-weight: lighter;
+	margin-right: 15px;
+	color: #95989A;
+}
+
+.filterTextContent:hover{
+	cursor: pointer;
 }
 
 .productsList {
 	width: 930px;
 	float: right;
+}
+
+.filterList {
+	margin-bottom: 20px;
+}
+
+.filterTag {
+	font-size: 25px;
+	font-weight: lighter;
+	margin:0 5px 10px 10px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #95989A;
+	padding: 10px 15px 10px 0px;
+	display: inline-block;
+}
+
+.filterTag:before{
+	padding: 10px;
+	font-size: 30px;
+	content:"\00D7";
+}
+
+footer {
+	width: 1366px;
+	bottom: 0;
 }
